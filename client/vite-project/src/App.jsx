@@ -1,12 +1,16 @@
-function App() {
-  return (
-    <div className="flex items-center justify-center min-h-screen bg-gray-100">
-      <h1 className="text-4xl font-bold text-blue-600">
-        Ciao, Tailwind funziona!
-      </h1>
-    </div>
-  )
-}
+import { Navigate, Route, Routes } from "react-router-dom";
 
-export default App
+import Navbar from "./components/Navbar";
 
+const App = () => {
+    // const {darkMode} = useSelector((state) => state.settings);
+    return (
+        <>
+            <Routes>
+                <Route path="/" element={<App />} />
+            </Routes>
+        </>
+    );
+};
+
+export default App;
