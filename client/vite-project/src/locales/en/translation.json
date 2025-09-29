@@ -1,0 +1,62 @@
+{
+  "form": {
+    "nameLabel": "Name",
+    "namePlaceholder": "Enter your name",
+    "dobLabel": "Date of birth",
+    "dobPlaceholder": "MM/GG/YYYY",
+    "genderLabel": "Gender",
+    "genderOptions": {
+      "M": "Male",
+      "F": "Female"
+    },
+    "submitButton": "Submit"
+  },
+
+  "compatibility": {
+    "partner1": "Partner 1 Date of Birth",
+    "partner2": "Partner 2 Date of Birth",
+    "dobPlaceholder": "MM/GG/YYYY",
+    "submitButton": "Submit"
+  },
+    
+  "child": {
+    "childNameLabel": "Child's name",
+    "childDobLabel": "Date of birth",
+    "childDobPlaceholder": "MM/GG/YYYY",
+    "childGenderLabel": "Gender",
+    "childGenderOptions": {
+      "M": "Male",
+      "F": "Female"
+    },
+    "submitButton": "Submit"
+  },
+
+  "homepage": {
+    "headerTitle": "Matrix of Destiny",
+    "headerParagraph": "You are much more than you think. Hidden within your birth date is a special code, a little mystery waiting to be discovered. Every number tells a part of you, of your unique story. The Matrix of Destiny is here to help you read these secrets. Ready to discover your story?",
+    "goDashboard": "Go to Dashboard",
+    "card1": {
+      "title": "Discover Yourself",
+      "description": "Every number tells a part of you."
+    },
+    "card2": {
+      "title": "Numbers and Meaning",
+      "description": "Discover what numbers mean in your life."
+    },
+    "card3": {
+      "title": "Arcana and Symbols",
+      "description": "Symbols hide unique messages for you."
+    },
+    "threeMatrices": {
+      "title": "The 3 Matrices of Destiny",
+      "matrix1": { "title": "Personal Matrix", "description": "Discover your unique path." },
+      "matrix2": { "title": "Family Matrix", "description": "Understand family dynamics." },
+      "matrix3": { "title": "Professional Matrix", "description": "Identify your vocation." }
+    },
+    "coupleMatrix": {
+      "title": "Couple Matrix",
+      "subtitle": "Discover the compatibility between you and your partner",
+      "button": "Go to Couple Matrix"
+    }
+  }
+}

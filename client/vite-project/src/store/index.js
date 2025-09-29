@@ -1,25 +1,13 @@
 import { configureStore } from "@reduxjs/toolkit";
-import authSlice from "./slices/authSlice";
-import settingsSlice from "./slices/settingsSlice";
+import authReducer from "./slices/authSlice";
+import settingsReducer from "./slices/settingsSlice";
 
+const store = configureStore({
+  reducer: {
+    auth: authReducer,
+    settings: settingsReducer,
+  },
+});
 
+export default store;
 
-export default configureStore({
-    reducer: {
-        auth: authSlice,
-        settings: settingsSlice,
-    }
-})
-
-/* 
-const state = {
-    auth: { // slice
-        user: null,
-        token: null
-    },
-    settings: { // slice
-        darkMode: false,
-        // ...
-    }
-}
-*/

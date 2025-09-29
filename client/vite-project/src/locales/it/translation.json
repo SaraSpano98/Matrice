@@ -1,0 +1,62 @@
+{
+  "form": {
+    "nameLabel": "Nome",
+    "namePlaceholder": "Inserisci il tuo nome",
+    "dobLabel": "Data di nascita",
+    "dobPlaceholder": "GG/MM/AAAA",
+    "genderLabel": "Genere",
+    "genderOptions": {
+      "M": "Maschio",
+      "F": "Femmina"
+    },
+    "submitButton": "Invia"
+  },
+
+  "compatibility": {
+    "partner1": "Data nascita Partner 1",
+    "partner2": "Data nascita Partner 2",
+    "dobPlaceholder": "GG/MM/AAAA",
+    "submitButton": "Invia"
+  },
+    
+  "child": {
+    "childNameLabel": "Nome del bambino",
+    "childDobLabel": "Data di nascita",
+    "childDobPlaceholder": "GG/MM/AAAA",
+    "childGenderLabel": "Genere",
+    "childGenderOptions": {
+      "M": "Maschio",
+      "F": "Femmina"
+    },
+    "submitButton": "Invia"
+  },
+
+  "homepage": {
+    "headerTitle": "Matrice del Destino",
+    "headerParagraph": "Sei molto più di quello che pensi. Dentro la tua data di nascita si nasconde un codice speciale, un piccolo mistero tutto da scoprire. Ogni numero racconta una parte di te, della tua storia unica. La Matrice del Destino è qui per aiutarti a leggere quei segreti. Ti va di scoprire la tua storia?",
+    "goDashboard": "Vai alla Dashboard",
+    "card1": {
+      "title": "Scopri te stesso",
+      "description": "Ogni numero racconta una parte di te."
+    },
+    "card2": {
+      "title": "Numeri e significato",
+      "description": "Scopri cosa significano i numeri nella tua vita."
+    },
+    "card3": {
+      "title": "Arcani e simboli",
+      "description": "I simboli nascondono messaggi unici per te."
+    },
+    "threeMatrices": {
+      "title": "Le 3 Matrici del Destino",
+      "matrix1": { "title": "Matrice Personale", "description": "Scopri il tuo percorso unico." },
+      "matrix2": { "title": "Matrice Familiare", "description": "Comprendi le dinamiche famigliari." },
+      "matrix3": { "title": "Matrice Professionale", "description": "Individua la tua vocazione." }
+    },
+    "coupleMatrix": {
+      "title": "Matrice di Coppia",
+      "subtitle": "Scopri la compatibilità tra te e il tuo partner",
+      "button": "Vai alla Matrice di Coppia"
+    }
+  }
+}

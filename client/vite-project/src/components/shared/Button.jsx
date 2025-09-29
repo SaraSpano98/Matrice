@@ -1,25 +1,14 @@
-const Button = ({ type = "default", children, disabled, onClick = () => {} }) => {
-
-    const selectButtonVariant = () => {
-            switch(type) {
-                case "default":
-                    return "py-1 px-4 bg-accent text-light hover:opacity-85 transition-all cursor-pointer border-none rounded";
-                case "inverse":
-                    return "py-1 px-4 bg-secondary text-light hover:opacity-85 transition-all cursor-pointer border-none rounded";
-                default:
-                    return "py-1 px-4 bg-accent text-light hover:opacity-85 transition-all cursor-pointer border-none rounded";
-            }
-    }
-    
-    const mergedClassName = () => {
-        return `${selectButtonVariant()} disabled:opacity-60 disabled:cursor-not-allowed`;
-    }
-
-    return(
-        <button onClick={onClick} disabled={disabled} className={mergedClassName()}>
-            {children}
-        </button>
-    )
-}
+const Button = ({ type = "default", children, ...props }) => {
+  const base = "px-4 py-2 rounded font-semibold transition-colors";
+  const styles = {
+    default: "bg-accent text-light hover:bg-accent/80",
+    primary: "bg-secondaryAccent text-dark hover:bg-secondaryAccent/80",
+  };
+  return (
+    <button className={`${base} ${styles[type] || styles.default}`} {...props}>
+      {children}
+    </button>
+  );
+};
 
 export default Button;

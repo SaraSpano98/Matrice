@@ -1,22 +1,22 @@
-import { createSlice } from '@reduxjs/toolkit';
-import { memory } from '../../utils/settings';
+import { createSlice } from "@reduxjs/toolkit";
 
-const settings = memory.get('settings');
+const initialState = {
+  darkMode: false,
+};
 
 const settingsSlice = createSlice({
-    name: 'settings',
-    initialState: {
-        darkMode: settings?.darkMode || false,
+  name: "settings",
+  initialState,
+  reducers: {
+    setDarkMode: (state, action) => {
+      state.darkMode = action.payload;
     },
-    redurcers: {
-        setDarkMode: (state, { payload }) => {
-            state.darkMode = payload;
-
-            memory.set('settings', { ...state });
-        },
-    },
+  },
 });
 
 export const { setDarkMode } = settingsSlice.actions;
-
 export default settingsSlice.reducer;
+
+
+
+
