@@ -1,9 +1,9 @@
-import { CreateSlice } from '@reduxjs/toolkit';
+import { createSlice } from '@reduxjs/toolkit';
 import { memory } from '../../utils/settings';
 
 const settings = memory.get('settings');
 
-const settingsSlice = CreateSlice({
+const settingsSlice = createSlice({
     name: 'settings',
     initialState: {
         darkMode: settings?.darkMode || false,

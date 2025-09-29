@@ -1,16 +1,11 @@
-import { Navigate, Route, Routes } from "react-router-dom";
-
 import Navbar from "./components/Navbar";
 
 const App = () => {
-    // const {darkMode} = useSelector((state) => state.settings);
-    return (
-        <>
-            <Routes>
-                <Route path="/" element={<App />} />
-            </Routes>
-        </>
-    );
+  return (
+    <>
+      <Navbar user={null} />  {/* puoi passare un utente o null */}
+    </>
+  );
 };
 
 export default App;
